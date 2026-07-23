@@ -1,22 +1,64 @@
 aid: axelrod
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/axelrod.png
 name: Axelrod
-description: Axelrod is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Axelrod is a Y Combinator (Summer 2026) startup building an autonomous operating
+  layer for boutique, independent, and luxury hotels and resorts. Its software runs
+  daily front-of-house and back-of-house operations, coordinating arrivals, rooms,
+  rates, access, maintenance, supplies, and owner reporting inside the systems and
+  teams a property already has in place, integrating with existing PMS, channel,
+  pricing, and accounting platforms rather than requiring net-new tooling. Founded
+  by Adrian Stoica and Saman Sayahpour, the company markets itself as "boutique
+  hotels that run themselves" and reports being live across four continents with
+  Michelin Key awarded and Marriott Luxury Collection properties. Axelrod does not
+  currently publish a public API, developer portal, or documentation; this profile
+  is maintained in the API Evangelist network as an enrichment lead.
 url: https://raw.githubusercontent.com/api-evangelist/axelrod/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - y-combinator
+x-batch: S26
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Hospitality
+- Hotels
+- Travel
+- Artificial Intelligence
+- Operations
+- Property Management
+- Y Combinator
+common:
+- type: DomainSecurity
+  url: security/axelrod-domain-security.yml
+- type: Website
+  url: https://axelrod.live/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/axelrod-labs/
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
